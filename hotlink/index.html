@@ -10,7 +10,6 @@
             padding: 2rem;
             text-align: center;
         }
-        
         .container {
             background-color: white;
             padding: 2rem;
@@ -56,16 +55,21 @@
         const link = document.getElementById('dynamicLink');
 
         input.addEventListener('input', function () {
-            const url = input.value.trim();
+            let url = input.value.trim();
 
-            // Validate that it starts with http:// or https://
+            // If the URL doesn't start with http:// or https://, prepend https://
+            if (!/^https?:\/\//i.test(url) && url.length > 0) {
+                url = 'https://' + url;
+            }
+
+            // Check again now that https:// may have been prepended
             if (/^https?:\/\//i.test(url)) {
                 link.href = url;
                 link.textContent = url;
                 link.classList.remove('disabled');
             } else {
                 link.href = "#";
-                link.textContent = "Invalid URL (must start with http:// or https://)";
+                link.textContent = "Invalid URL";
                 link.classList.add('disabled');
             }
         });
