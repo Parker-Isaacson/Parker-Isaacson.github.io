@@ -1,51 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Index</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .container {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            min-width: 300px;
-            max-width: 750px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .container ul {
-            padding: 0;
-        }
-
-        .container ul li {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .link {
-            display: block;
-            margin-top: 1rem;
-            color: blue;
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <h1>github.parkerisaacson.com</h1>
-        <p>This will be a list of the website projects that I am working on, they will only be published here once they are completed.</p>
+<!-- This page is very basic, only intended to show off my other projects -->
+<!-- Please check out the other projects on my github: https://github.com/Parker-Isaacson -->
+<div class="wrapper">
+    <!-- Hamburger Button -->
+    <button id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="side-menu" aria-hidden="true">
         <ul>
-            <li><a href="./hotlink/index.html" class="link">hotlink</a></li>
-        </ul> 
+            <li><a href="index.html"rel="noopener">Home</a></li>
+            <h3>Current Projects</h3>
+            <li><a href="projects/rendermd/index.html" rel="noopener">Render.md</a></li>
+            <li><a href="projects/wynncalc/index.html" rel="noopener">WynnCalc</a></li>
+            <li><a href="projects/wynncalc/index.html" rel="noopener">Fox Hunt Tracer</a></li>
+        </ul>
+    </nav>
+    <div class="heading">
+        <h1>Hi, I'm Parker Isaacson</h1>
+        <p><b>Clarkson University, Class of 2027, Software Engineering.</b></p>
     </div>
+    <h3>Current Projects:</h3>
+    <div class="flex-container">
+        <a href="projects/rendermd/index.html" class="flex-item full-width">
+            <div>
+                <h3 class="micro-title">Render.md</h3>
+                <br>
+                <p class="micro-par">
+                    The goal of this project is to write software that converts a Markdown file (.md) into an HTML file (.html). It should have multiple moving parts that connect and ensure a proper build. This project includes writing my own HTML class that can be used to build complex HTML or XML trees and a rendering class that allows for fast revision. With speed as a concern, I've set a goal of rendering 1,000,000 lines in less than 1 second - an ambitious but not impossible goal.
+                </p>
+            </div>
+        </a>
+        <a href="projects/wynncalc/index.html" class="flex-item half-width">
+            <div>
+                <h3 class="micro-title">WynnCalc</h3>
+                <br>
+                <p class="micro-par">
+                    The goal of this project is to write software that optimizes builds for the game Wynncraft. Creating a "build" is time-consuming and can result in not achieving the best possible setup. With this tool, creating or theorizing a new build becomes easy. From saving hours or even days to potentially saving in-game currency, this application will help many players.                </p>
+            </div>
+        </a>
+        <a href="projects/foxhunt/index.html" class="flex-item">
+            <div>
+                <h3 class="micro-title">Fox Hunt Tracer</h3>
+                <br>
+                <p class="micro-par">
+                    This project is currently in the planning stage. The goal is to create a device that can aid in locating a radio emitter within a 2-foot radius of its actual position. All math, reasoning, and build instructions will be thoroughly documented to allow others to rebuild and improve upon the project.
+                </p>
+            </div>
+        </a>
+    </div>
+    <h3>Completed Projects:</h3>
+    <div class="flex-container">
+        <a href="projects/projmotion/index.html" class="flex-item">
+            <div>
+                <h3 class="micro-title">Projectile Motion</h3>
+                <br>
+                <p class="micro-par">
+                    This project was created to begin my development journey in C#. It's simple, but I feel it was a great beginner project. With a graph that shows the curve that a projectile object would follow and a simple interface, this application served as a solid starting point for learning C#.
+                </p>
+            </div>
+        </a>
+        <a href="projects/archinstaller/index.html" class="flex-item half-width">
+            <div>
+                <h3 class="micro-title">Arch Installer</h3>
+                <br>
+                <p class="micro-par">
+                    This project was created to improve the efficiency of installing Arch Linux. I frequently had to flash new computers to test different desktop environments, packages, and projects I was building. This program was developed at a time when I didn't have hardware powerful enough to run a virtual machine. The first iteration was written in C++, and the second in shell.
+                </p>
+            </div>
+        </a>
+        <a href="projects/pages/index.html" class="flex-item full-width">
+            <div>
+                <h3 class="micro-title">My Webpage</h3>
+                <br>
+                <p class="micro-par">
+                    Creating my webpage will be an on-going project. For now, my initial goal is complete as I have created a page to highlight my various projects - showcasing what I've made and what I'm currently working on. I also want this page to reflect my growth in graphic design. Hopefully, there will be a steady and noticeable improvement over time.
+                </p>
+            </div>
+        </a>
+    </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
