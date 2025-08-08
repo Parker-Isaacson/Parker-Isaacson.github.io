@@ -1,0 +1,14 @@
+:root { /* Thanks to Lunacy Color Generator for these colors */
+    --accent: #FF9A7A;
+    --active: #A1DE7D;
+    --background: #FFFFFF;
+    --cream: #FFF7E6;
+    --primary: #3F51B5;
+    --light-primary: #C5CAE9;
+    --dark-primary: #303F9F;
+    --secondaty: #2C3A8D;
+    --dark-secondary: #1E2B6F;
+    --divider: #BDBDBD;
+    --text-primary: #000000;
+    --text-secondary: #757575;
+}
