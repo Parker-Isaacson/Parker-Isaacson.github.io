@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Fox Hunt Tracer</title>
 </head>
 <body>
-<!-- Hamburger Button -->
-<button id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-<nav id="side-menu" aria-hidden="true">
-    <ul>
-        <li><a href="../../index.html"rel="noopener">Home</a></li>
-        <h3>Current Projects</h3>
-        <li><a href="../rendermd/index.html" rel="noopener">Render.md</a></li>
-        <li><a href="../wynncalc/index.html" rel="noopener">WynnCalc</a></li>
-        <li><a href="../wynncalc/index.html" rel="noopener">Fox Hunt Tracer</a></li>
-    </ul>
+<nav style="background-color: var(--cream);">
+    <div class="wrapper nav">
+        <div class="dropdown">
+            <span>Home</span>
+            <div class="dropdown-content">
+                <ul></ul>
+                <li><a href="/index.html#heading" class="active">Heading</a></li>
+                <li><a href="/index.html#aboutme" class="active">About Me</a></li>
+                <li><a href="/index.html#projects" class="in-progress">Projects</a></li>
+                <li><a href="/index.html#techskills" class="active">Technical Skills</a></li>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span>Projects</span>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="/projects/wynncalc/" class="in-progress">WynnCalc</a></li>
+                    <li><a href="/projects/rendermd/" class="in-progress">Render.md</a></li>
+                    <li><a href="/projects/foxhunt/" class="inactive">Fox Hunt Tracer</a></li>
+                    <li><a href="/projects/webpage/" class="in-progress">Webpage</a></li>
+                    <li><a href="/projects/projmotion/" class="active">Projectile Motion</a></li>
+                    <li><a href="/projects/archinstaller/" class="active">Arch Installer</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </nav>
-<p>Nothing is here yet, tune in later and see if something has been added.</p>
-<script src="../../js/script.js"></script>
+<hr>
+<p style="margin: 10px;">It looks like nothing is here yet! See if this is a repo on my <a href="https://github.com/Parker-Isaacson">GitHub</a>.</p>
 </body>
 </html>

@@ -3,92 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/card.css">
     <title>Portfolio</title>
 </head>
 <body>
-<!-- This page is very basic, only intended to show off my other projects -->
-<!-- Please check out the other projects on my github: https://github.com/Parker-Isaacson -->
-<div class="wrapper">
-    <!-- Hamburger Button -->
-    <button id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav id="side-menu" aria-hidden="true">
-        <ul>
-            <li><a href="index.html"rel="noopener">Home</a></li>
-            <h3>Current Projects</h3>
-            <li><a href="projects/rendermd/index.html" rel="noopener">Render.md</a></li>
-            <li><a href="projects/wynncalc/index.html" rel="noopener">WynnCalc</a></li>
-            <li><a href="projects/wynncalc/index.html" rel="noopener">Fox Hunt Tracer</a></li>
-        </ul>
-    </nav>
-    <div class="heading">
-        <h1>Hi, I'm Parker Isaacson</h1>
-        <p><b>Clarkson University, Class of 2027, Software Engineering.</b></p>
+<nav style="background-color: var(--cream);">
+    <div class="wrapper nav">
+        <div class="dropdown">
+            <span>Home</span>
+            <div class="dropdown-content">
+                <ul></ul>
+                <li><a href="/index.html#heading" class="active">Heading</a></li>
+                <li><a href="/index.html#aboutme" class="active">About Me</a></li>
+                <li><a href="/index.html#projects" class="in-progress">Projects</a></li>
+                <li><a href="/index.html#techskills" class="active">Technical Skills</a></li>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span>Projects</span>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="/projects/wynncalc/" class="in-progress">WynnCalc</a></li>
+                    <li><a href="/projects/rendermd/" class="in-progress">Render.md</a></li>
+                    <li><a href="/projects/foxhunt/" class="inactive">Fox Hunt Tracer</a></li>
+                    <li><a href="/projects/webpage/" class="in-progress">Webpage</a></li>
+                    <li><a href="/projects/projmotion/" class="active">Projectile Motion</a></li>
+                    <li><a href="/projects/archinstaller/" class="active">Arch Installer</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <h3>Current Projects:</h3>
-    <div class="flex-container">
-        <a href="projects/rendermd/index.html" class="flex-item full-width">
-            <div>
-                <h3 class="micro-title">Render.md</h3>
-                <br>
-                <p class="micro-par">
-                    The goal of this project is to write software that converts a Markdown file (.md) into an HTML file (.html). It should have multiple moving parts that connect and ensure a proper build. This project includes writing my own HTML class that can be used to build complex HTML or XML trees and a rendering class that allows for fast revision. With speed as a concern, I've set a goal of rendering 1,000,000 lines in less than 1 second - an ambitious but not impossible goal.
-                </p>
+</nav>
+<div class="heading wrapper">
+    <h1 id="heading">Hi, I'm Parker Isaacson</h1>
+    <p>Clarkson University, Class of 2027, Software Engineering.</p>
+</div>
+<div class="about-me wrapper cream">
+    <h1 id="aboutme">About Me</h1>
+    <hr style="background-color: var(--divider);">
+    <p>Going to my junior year of college at Clarkson University, I'm best described as a small developer. I enjoy making projects that can aid in improving time effieciency for reduntant tasks. I'd like to feel that I'm quite good at developing algorithimic projects, though not the best as graphical design (Check out this pages old designs!). I hope to improve on everything that I do, and never call myself perfect. Looking forward to see where I want to be, and looking backward to see where I can from is what keeps on pushing me forward. Since I feel that any advice is good advice; if you have any advice, whether a way to do something better, better graphics (please), etc., feel free to reach out to me!</p>
+    <p>You may have gotten here in different ways, so here are some of my socials: <a href="https://github.com/Parker-Isaacson">GitHub</a>, <a href="https://github.parkerisaacson.com/">Portfolio</a>, <a href="https://www.linkedin.com/in/parker-isaacson-8812a8292/">LinkedIn</a>.</p>
+    <p>In case you are looking, here is a link for the projects directory: <a href="/projects/">Projects</a></p>
+</div>
+<div class="projects wrapper">
+    <h1 id="projects">My Projects</h1>
+    <hr style="background-color: var(--divider);">
+    <div class="inner">
+        <div class="item">
+            <div class="card">
+                <div class="top">
+                    <div class="circle in-progress"></div>
+                    <div class="text">In Progress</div>
+                </div>
+                <div class="header">WynnCalc</div>
+                <div class="image">
+                        <img src="media/WynnLogo.png" alt="Wynncraft Logo - Wynncraft Discord">
+                </div>
+                <div class="description">
+                    <div clas="text">
+                        WynnCalc is a tool that optimizes builds for the Minecraft Server Wynncraft.
+                    </div>
+                    <a class="learn" href="/projects/wynncalc/">
+                        Learn More.
+                        <div class="triangle in-progress"></div>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="projects/wynncalc/index.html" class="flex-item half-width">
-            <div>
-                <h3 class="micro-title">WynnCalc</h3>
-                <br>
-                <p class="micro-par">
-                    The goal of this project is to write software that optimizes builds for the game Wynncraft. Creating a "build" is time-consuming and can result in not achieving the best possible setup. With this tool, creating or theorizing a new build becomes easy. From saving hours or even days to potentially saving in-game currency, this application will help many players.                </p>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="top">
+                    <div class="circle in-progress"></div>
+                    <div class="text">In Progress</div>
+                </div>
+                <div class="header">Render.md</div>
+                <div class="image">
+                        <img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" alt="Markdown Guide Logo - markdownguide.org" class="black-logo">
+                </div>
+                <div class="description">
+                    <div clas="text">
+                        Render.md is a tool to render Markdown into HTML locally.
+                    </div>
+                    <a class="learn" href="/projects/rendermd/">
+                        Learn More.
+                        <div class="triangle in-progress"></div>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="projects/foxhunt/index.html" class="flex-item">
-            <div>
-                <h3 class="micro-title">Fox Hunt Tracer</h3>
-                <br>
-                <p class="micro-par">
-                    This project is currently in the planning stage. The goal is to create a device that can aid in locating a radio emitter within a 2-foot radius of its actual position. All math, reasoning, and build instructions will be thoroughly documented to allow others to rebuild and improve upon the project.
-                </p>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="top">
+                    <div class="circle inactive"></div>
+                    <div class="text">Not Started - Theorizing Math</div>
+                </div>
+                <div class="header">Fox Hunt</div>
+                <div class="image">
+                        <img src="media/Radio.svg" alt="Radio Icon - Lunacy" class="black-logo">
+                </div>
+                <div class="description">
+                    <div clas="text">
+                        Fox Hunt Tracer is a tool to accuratly track radio emmiters from distance.
+                    </div>
+                    <a class="learn" href="/projects/foxhunt/">
+                        Learn More.
+                        <div class="triangle inactive"></div>
+                    </a>
+                </div>
             </div>
-        </a>
-    </div>
-    <h3>Completed Projects:</h3>
-    <div class="flex-container">
-        <a href="projects/projmotion/index.html" class="flex-item">
-            <div>
-                <h3 class="micro-title">Projectile Motion</h3>
-                <br>
-                <p class="micro-par">
-                    This project was created to begin my development journey in C#. It's simple, but I feel it was a great beginner project. With a graph that shows the curve that a projectile object would follow and a simple interface, this application served as a solid starting point for learning C#.
-                </p>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="top">
+                    <div class="circle in-progress"></div>
+                    <div class="text">In Progress</div>
+                </div>
+                <div class="header">Webpage</div>
+                <div class="image">
+                        <img src="media/WebLogo.svg" alt="Web Logo - svgrepo.com" class="black-logo">
+                </div>
+                <div class="description">
+                    <div clas="text">
+                        My webpage is somewhere to demostrate my skills and projects.
+                    </div>
+                    <a class="learn" href="/projects/webpage/">
+                        Learn More.
+                        <div class="triangle in-progress"></div>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="projects/archinstaller/index.html" class="flex-item half-width">
-            <div>
-                <h3 class="micro-title">Arch Installer</h3>
-                <br>
-                <p class="micro-par">
-                    This project was created to improve the efficiency of installing Arch Linux. I frequently had to flash new computers to test different desktop environments, packages, and projects I was building. This program was developed at a time when I didn't have hardware powerful enough to run a virtual machine. The first iteration was written in C++, and the second in shell.
-                </p>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="top">
+                    <div class="circle active"></div>
+                    <div class="text">Completed</div>
+                </div>
+                <div class="header">Proj. Motion</div>
+                <div class="image">
+                        <img src="media/TennisBall.svg" alt="Tennis Ball - Lunacy" class="black-logo">
+                </div>
+                <div class="description">
+                    <div clas="text">
+                        Projectile Motion is a projec that computes the path of an object in freefall.
+                    </div>
+                    <a class="learn" href="/projects/projmotion/">
+                        Learn More.
+                        <div class="triangle active"></div>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="projects/pages/index.html" class="flex-item full-width">
-            <div>
-                <h3 class="micro-title">My Webpage</h3>
-                <br>
-                <p class="micro-par">
-                    Creating my webpage will be an on-going project. For now, my initial goal is complete as I have created a page to highlight my various projects - showcasing what I've made and what I'm currently working on. I also want this page to reflect my growth in graphic design. Hopefully, there will be a steady and noticeable improvement over time.
-                </p>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="top">
+                    <div class="circle active"></div>
+                    <div class="text">Completed</div>
+                </div>
+                <div class="header">Arch</div>
+                <div class="image">
+                        <img src="media/ArchLogo.svg" alt="Arch Logo - svgrepo.com" class="black-logo">
+                </div>
+                <div class="description">
+                    <div clas="text">
+                        Arch Installer is a program to aid in the installation of Arch Linux.
+                    </div>
+                    <a class="learn" href="/projects/archinstaller/">
+                        Learn More.
+                        <div class="triangle active"></div>
+                    </a>
+                </div>
             </div>
-        </a>
+        </div>
     </div>
 </div>
-<script src="js/script.js"></script>
+<div class="tech-skills wrapper cream">
+    <h1 id="techskills">Technical Skills</h1>
+    <p>None yet, will update soon!</p>
+</div>
 </body>
 </html>
