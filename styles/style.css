@@ -2,7 +2,8 @@
     --accent: #FF9A7A;
     --active: #A1DE7D;
     --background: #FFFFFF;
-    --cream: #FFF7E6;
+    --alt-background: #EEEEEE; /* FFFBF2 */
+    --cream: #FFFBF2; /*  FFF7E6 */
     --primary: #3F51B5;
     --light-primary: #C5CAE9;
     --dark-primary: #303F9F;
@@ -26,9 +27,9 @@ body {
     position: relative;
 }
 
-.cream {
-    background-color: var(--cream);
-    box-shadow: 0 0 0 100vmax var(--cream);
+.alt-background {
+    background-color: var(--alt-background);
+    box-shadow: 0 0 0 100vmax var(--alt-background);
     clip-path: inset(0 -100vmax);
 }
 
