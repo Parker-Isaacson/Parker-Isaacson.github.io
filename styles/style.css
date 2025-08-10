@@ -256,3 +256,22 @@ nav {
 }
 
 /* TECH SKILLS */
+.tech-skills {
+    padding: 10px 0;
+}
+
+.tech-skills h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.tech-skills p {
+    margin: 0;
+    padding: 5px;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.tech-skills a:link, .tech-skills a:visited, .tech-skills a:hover, .tech-skills a:focus, .tech-skills a:active {
+    color: var(--text-secondary);
+}
