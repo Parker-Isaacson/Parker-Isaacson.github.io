@@ -4,186 +4,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/card.css">
     <title>Portfolio</title>
 </head>
 <body>
-<nav style="background-color: var(--alt-background);">
-    <div class="wrapper nav">
-        <div class="dropdown">
-            <span>Home</span>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="/" class="active">Home</a></li>
-                    <li><a href="/index.html#heading" class="active">Heading</a></li>
-                    <li><a href="/index.html#aboutme" class="active">About Me</a></li>
-                    <li><a href="/index.html#projects" class="in-progress">Projects</a></li>
-                    <li><a href="/index.html#techskills" class="active">Technical Skills</a></li>
-                </ul>
-            </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Parker Isaacson</a>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="#home" class="navbar-link active">Home</a></li>
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#projects" class="navbar-link">Projects</a></li>
+                <li><a href="#skills" class="navbar-link">Skills</a></li>
+                <li><a href="#hobbies" class="navbar-link">Hobbies</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navbar-toggle">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
         </div>
-        <div class="dropdown">
-            <span>Projects</span>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="/projects/wynncalc/" class="in-progress">WynnCalc</a></li>
-                    <li><a href="/projects/rendermd/" class="in-progress">Render.md</a></li>
-                    <li><a href="/projects/foxhunt/" class="inactive">Fox Hunt Tracer</a></li>
-                    <li><a href="/projects/webpage/" class="in-progress">Webpage</a></li>
-                    <li><a href="/projects/projmotion/" class="active">Projectile Motion</a></li>
-                    <li><a href="/projects/archinstaller/" class="active">Arch Installer</a></li>
-                </ul>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="section text-center space-y-6 anchor-section">
+            <h1 class="header header-large">Parker Isaacson</h1>
+            <p class="paragraph paragraph-large muted text-center">Clarkson University -- 2027 -- Software Engineering</p>
+        </section>
+
+        <section id="about" class="section space-y-8 anchor-section">
+            <h2 class="subheading subheading-h2 accent">About Me</h2>
+            <p class="paragraph paragraph-medium">
+                Hi, I'm a Junior Software Engineer currently studying at Clarkson University. I specialize in writing backend systems and am learning as much as possible about frontend frameworks and design patterns. I'm very passionate about building clean, efficient and useful projects.
+            </p>
+            <p class="paragraph paragraph-medium">
+                With experience in C, C++, and Python, I've worked on tools, renderers, and AI applications. These projects push me forward, driving growth every time I sit down and develop.
+            </p>
+            <p class="paragraph paragraph-medium">
+                I'm driven by technical challenges and continuously improving my skills to stay ahead. I value collaboration, quality, and building meaningful projects.
+            </p>
+            <p class="paragraph paragraph-medium">
+                I'm always looking for opportunities to improve, whether that is developing innovative products, contributing to open source projects, or even getting to work with skilled individuals.
+            </p>
+        </section>
+
+        <section id="projects" class="section space-y-6 anchor-section">
+            <h2 class="subheading subheading-h2">Projects</h2>
+            <div class="grid grid-md-2 grid-lg-3">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title">SnapQuery</h3>
+                    </div>
+                    <div class="card-content">
+                        AI tool to increase the efficiency of using browser based AI tools.
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/Parker-Isaacson/SnapQuery" target="_blank" class="btn btn-primary btn-small">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Render.md</h3>
+                    </div>
+                    <div class="card-content">
+                        C++ based Markdown to HTML Renderer.
+                    </div>
+                    <div class="card-dual-button">
+                        <div class="card-action">
+                            <a href="/render/" class="btn btn-secondary btn-small">Explore</a>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/Parker-Isaacson/Render.md" target="_blank" class="btn btn-primary btn-small">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-elevated">
+                    <div class="card-header">
+                        <h3 class="card-title">xtts-finetune-cli</h3>
+                    </div>
+                    <div class="card-content">
+                        CLI tool for leveraging XTTS to create high quality audio deepfakes.
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/Parker-Isaacson/xtts-finetune-cli" target="_blank" class="btn btn-primary btn-small">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section space-y-8 anchor-section">
+            <h2 class="subheading subheading-h2 accent">Technical Skills</h2>
+            <div class="paragraph-with-image image-right">
+                <img src="/media/flower1.jpg" 
+                     alt="White Flowers" 
+                     class="image-medium">
+                <div>
+                    <p class="paragraph paragraph-medium">
+                        I'm proficient in a diverse set of languages, C, C++, Python are the big ones, but I'm experienced in Lua, Haskell, R, etc. I am experienced with React.js with a continuous focus on expanding my expertise in frontend and full-stack development.
+                    </p>
+                    <p class="paragraph paragraph-medium">
+                        I am highly skilled with multiple Linux distributions, including Debian, Red Hat, and Arch and many of there derivatives. This has made me comfortable using Linux and Windows based systems interchangeably.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="section space-y-8 anchor-section">
+            <h2 class="subheading subheading-h2 accent">Hobbies</h2>
+            <div class="paragraph-with-image">
+                <img src="/media/flower2.jpg" 
+                     alt="Red Flower" 
+                     class="image-medium">
+                <div class="space-y-4">
+                    <div class="alert alert-warning">
+                        <svg class="alert-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>Note: Just a hobbyist behind the lens - not a pro, just having fun.</div>
+                    </div>
+                    <p class="paragraph paragraph-medium">
+                        Development is not what I only do, when I'm not typing I like to hike, and take photos, and learn, which helps me stay creative and knowledgeable.
+                    </p>
+                    <button class="btn btn-primary btn-medium" onclick="openModal()">
+                            View Details
+                    </button>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <div id="hobby-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Some Images</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-6">
+                <p class="paragraph paragraph-medium">
+                    Below are just a handful of the images I've taken, all of them are unedited.
+                </p>
+                <img src="/media/flower3.jpg" 
+                    alt="Flower" 
+                    class="image-medium modal-image">
+                <img src="/media/flower4.jpg" 
+                    alt="Flower" 
+                    class="image-medium modal-image">
+                <img src="/media/flower5.jpg" 
+                    alt="Flower" 
+                    class="image-medium modal-image">
+                <img src="/media/flower6.jpg" 
+                    alt="Flower" 
+                    class="image-medium modal-image">
+                <img src="/media/woods1.jpg" 
+                    alt="Woods" 
+                    class="image-medium modal-image">
+                <img src="/media/woods2.jpg" 
+                    alt="Woods" 
+                    class="image-medium modal-image">
             </div>
         </div>
     </div>
-</nav>
-<div class="heading wrapper">
-    <h1 id="heading">Hi, I'm Parker Isaacson</h1>
-    <p>Clarkson University, Class of 2027, Software Engineering.</p>
-</div>
-<div class="about-me wrapper alt-background">
-    <h1 id="aboutme">About Me</h1>
-    <hr style="background-color: var(--divider);">
-    <p>Going to my junior year of college at Clarkson University, I'm best described as a small developer. I enjoy making projects that can aid in improving time effieciency for reduntant tasks. I'd like to feel that I'm quite good at developing algorithimic projects, though not the best as graphical design (Check out this pages old designs!). I hope to improve on everything that I do, and never call myself perfect. Looking forward to see where I want to be, and looking backward to see where I can from is what keeps on pushing me forward. Since I feel that any advice is good advice; if you have any advice, whether a way to do something better, better graphics (please), etc., feel free to reach out to me!</p>
-    <p>You may have gotten here in different ways, so here are some of my socials: <a href="https://github.com/Parker-Isaacson">GitHub</a>, <a href="https://github.parkerisaacson.com/">Portfolio</a>, <a href="https://www.linkedin.com/in/parker-isaacson-8812a8292/">LinkedIn</a>.</p>
-    <p>In case you are looking, here is a link for the projects directory: <a href="/projects/">Projects</a></p>
-</div>
-<div class="projects wrapper">
-    <h1 id="projects">My Projects</h1>
-    <hr style="background-color: var(--divider);">
-    <div class="inner">
-        <div class="item">
-            <div class="card">
-                <div class="top">
-                    <div class="circle in-progress"></div>
-                    <div class="text">In Progress</div>
-                </div>
-                <div class="header">WynnCalc</div>
-                <div class="image">
-                        <img src="media/WynnLogo.png" alt="Wynncraft Logo - Wynncraft Discord">
-                </div>
-                <div class="description">
-                    <div clas="text">
-                        WynnCalc is a tool that optimizes builds for the Minecraft Server Wynncraft.
-                    </div>
-                    <a class="learn" href="/projects/wynncalc/">
-                        Learn More.
-                        <div class="triangle in-progress"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="top">
-                    <div class="circle in-progress"></div>
-                    <div class="text">In Progress</div>
-                </div>
-                <div class="header">Render.md</div>
-                <div class="image">
-                        <img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" alt="Markdown Guide Logo - markdownguide.org" class="black-logo">
-                </div>
-                <div class="description">
-                    <div clas="text">
-                        Render.md is a tool to render Markdown into HTML locally.
-                    </div>
-                    <a class="learn" href="/projects/rendermd/">
-                        Learn More.
-                        <div class="triangle in-progress"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="top">
-                    <div class="circle inactive"></div>
-                    <div class="text">Not Started - Theorizing Math</div>
-                </div>
-                <div class="header">Fox Hunt</div>
-                <div class="image">
-                        <img src="media/Radio.svg" alt="Radio Icon - Lunacy" class="black-logo">
-                </div>
-                <div class="description">
-                    <div clas="text">
-                        Fox Hunt Tracer is a tool to accuratly track radio emmiters from distance.
-                    </div>
-                    <a class="learn" href="/projects/foxhunt/">
-                        Learn More.
-                        <div class="triangle inactive"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="top">
-                    <div class="circle in-progress"></div>
-                    <div class="text">In Progress</div>
-                </div>
-                <div class="header">Webpage</div>
-                <div class="image">
-                        <img src="media/WebLogo.svg" alt="Web Logo - svgrepo.com" class="black-logo">
-                </div>
-                <div class="description">
-                    <div clas="text">
-                        My webpage is somewhere to demostrate my skills and projects.
-                    </div>
-                    <a class="learn" href="/projects/webpage/">
-                        Learn More.
-                        <div class="triangle in-progress"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="top">
-                    <div class="circle active"></div>
-                    <div class="text">Completed</div>
-                </div>
-                <div class="header">Motion</div>
-                <div class="image">
-                        <img src="media/TennisBall.svg" alt="Tennis Ball - Lunacy" class="black-logo">
-                </div>
-                <div class="description">
-                    <div clas="text">
-                        Projectile Motion is a projec that computes the path of an object in freefall.
-                    </div>
-                    <a class="learn" href="/projects/projmotion/">
-                        Learn More.
-                        <div class="triangle active"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <div class="top">
-                    <div class="circle active"></div>
-                    <div class="text">Completed</div>
-                </div>
-                <div class="header">Arch</div>
-                <div class="image">
-                        <img src="media/ArchLogo.svg" alt="Arch Logo - svgrepo.com" class="black-logo">
-                </div>
-                <div class="description">
-                    <div clas="text">
-                        Arch Installer is a program to aid in the installation of Arch Linux.
-                    </div>
-                    <a class="learn" href="/projects/archinstaller/">
-                        Learn More.
-                        <div class="triangle active"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="tech-skills wrapper alt-background">
-    <h1 id="techskills">Technical Skills</h1>
-    <hr>
-    <p>Proficient in a diverse range of programming languages, listed in order of proficiency: C++, C, Python, C#, MATLAB, HTML, CSS, SQL, JavaScript / TypeScript, Lua. Experienced with web development frameworks, including React.js, with an ongoing focus on expanding expertise in front-end and full-stack development, as well as UI/UX design principles.<br>Highly skilled in working with multiple Linux distributions, in order of proficiency: Debian-based systems (including Ubuntu, Mint, and other derivatives), Arch Linux, and Fedora. Comfortable using both Linux and Windows environments on a daily basis, ensuring cross-platform adaptability. Committed to continuous learning in new programming languages, frameworks, and operating systems to broaden technical capabilities.</p>
-</div>
+
+    <script>
+        // Mobile navbar toggle
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navbarNav = document.getElementById('navbar-nav');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarNav.classList.toggle('active');
+        });
+
+        // Close mobile nav when clicking a link
+        const navbarLinks = document.querySelectorAll('.navbar-link');
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbarNav.classList.remove('active');
+            });
+        });
+
+        // Active navbar link highlighting
+        const sections = document.querySelectorAll('.anchor-section');
+        const navLinks = document.querySelectorAll('.navbar-link');
+
+        function updateActiveLink() {
+            let currentSection = '';
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    currentSection = section.id;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Update active link on scroll
+        window.addEventListener('scroll', updateActiveLink);
+        
+        // Update active link on page load
+        updateActiveLink();
+
+        // Smooth scroll enhancement for older browsers
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href.startsWith('#')) {
+                    const targetId = href.substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        e.preventDefault();
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Card hover effects enhancement
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-2px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Modal functionality
+        function openModal() {
+            document.getElementById('hobby-modal').classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            document.getElementById('hobby-modal').classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal when clicking overlay
+        document.getElementById('hobby-modal').addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-overlay')) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
