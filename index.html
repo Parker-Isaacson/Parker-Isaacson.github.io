@@ -15,6 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
 
+    <!-- Prefetch images for modal -->
+    <link rel="prefetch" href="/media/flower3-small.jpg">
+    <link rel="prefetch" href="/media/flower4-small.jpg">
+    <link rel="prefetch" href="/media/flower5-small.jpg">
+    <link rel="prefetch" href="/media/flower6-small.jpg">
+    <link rel="prefetch" href="/media/woods1-small.jpg">
+    <link rel="prefetch" href="/media/woods2-small.jpg">
+
     <!-- SEO Meta Tags -->
     <title>Parker Isaacson | Software Engineer — New York & New Jersey</title>
     <meta name="description" content="Parker Isaacson is a software engineer based in New York and New Jersey, specializing in backend systems, web development, and full-stack applications.">
@@ -246,41 +254,17 @@
                     Click any image to view the full-resolution version in a new tab.
                 </p>
 
-                <a href="/media/flower3.jpg" target="_blank">
-                    <img src="/media/flower3-small.jpg" 
-                        alt="Vibrant yellow peony flower in bloom surrounded by green leaves" 
-                        class="image-medium modal-image" loading="lazy">
-                </a>
+                <div class="space-y-6">
+                    <p class="paragraph paragraph-medium">
+                        Click the button below to load my photos (they won't load until you ask).
+                    </p>
 
-                <a href="/media/flower4.jpg" target="_blank">
-                    <img src="/media/flower4-small.jpg" 
-                        alt="Cluster of red and purple garden flowers in bright afternoon light" 
-                        class="image-medium modal-image" loading="lazy">
-                </a>
+                    <button id="load-images-btn" class="btn btn-primary btn-medium">
+                        Load Images
+                    </button>
 
-                <a href="/media/flower5.jpg" target="_blank">
-                    <img src="/media/flower5-small.jpg" 
-                        alt="Patch of light purple and white wildflowers growing in tall grass" 
-                        class="image-medium modal-image" loading="lazy">
-                </a>
-
-                <a href="/media/flower6.jpg" target="_blank">
-                    <img src="/media/flower6-small.jpg" 
-                        alt="Sunlit woodland clearing with soft green undergrowth and tall trees" 
-                        class="image-medium modal-image" loading="lazy">
-                </a>
-
-                <a href="/media/woods1.jpg" target="_blank">
-                    <img src="/media/woods1-small.jpg" 
-                        alt="Dense forest with patches of sunlight filtering through trees onto ferns" 
-                        class="image-medium modal-image" loading="lazy">
-                </a>
-
-                <a href="/media/woods2.jpg" target="_blank">
-                    <img src="/media/woods2-small.jpg" 
-                        alt="Woodland plants and ferns with clusters of small white wildflowers" 
-                        class="image-medium modal-image" loading="lazy">
-                </a>
+                    <div id="image-container" class="space-y-4" style="display:none;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -382,6 +366,32 @@
             if (e.key === 'Escape') {
                 closeModal();
             }
+        });
+
+        document.getElementById('load-images-btn').addEventListener('click', function() {
+        const container = document.getElementById('image-container');
+        container.innerHTML = `
+            <a href="/media/flower3.jpg" target="_blank">
+            <img src="/media/flower3-small.jpg" alt="Vibrant yellow peony flower" class="image-medium modal-image" loading="lazy">
+            </a>
+            <a href="/media/flower4.jpg" target="_blank">
+            <img src="/media/flower4-small.jpg" alt="Cluster of red and purple garden flowers" class="image-medium modal-image" loading="lazy">
+            </a>
+            <a href="/media/flower5.jpg" target="_blank">
+            <img src="/media/flower5-small.jpg" alt="Patch of light purple wildflowers" class="image-medium modal-image" loading="lazy">
+            </a>
+            <a href="/media/flower6.jpg" target="_blank">
+            <img src="/media/flower6-small.jpg" alt="Sunlit woodland clearing" class="image-medium modal-image" loading="lazy">
+            </a>
+            <a href="/media/woods1.jpg" target="_blank">
+            <img src="/media/woods1-small.jpg" alt="Dense forest sunlight" class="image-medium modal-image" loading="lazy">
+            </a>
+            <a href="/media/woods2.jpg" target="_blank">
+            <img src="/media/woods2-small.jpg" alt="Woodland plants and ferns" class="image-medium modal-image" loading="lazy">
+            </a>
+        `;
+        container.style.display = 'block';
+        this.style.display = 'none'; // Hide the button once loaded
         });
     </script>
 </body>
