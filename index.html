@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGNHX0Q36S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VGNHX0Q36S');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
-    <title>Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Parker Isaacson | Software Engineer — New York & New Jersey</title>
+    <meta name="description" content="Parker Isaacson is a software engineer based in New York and New Jersey, specializing in backend systems, web development, and full-stack applications.">
+    <meta name="keywords" content="Parker Isaacson, software engineer, web developer, full stack developer, New York, New Jersey, Clarkson University, programming, C++, Python, GitHub portfolio">
+    <meta name="author" content="Parker Isaacson">
+    <link rel="canonical" href="https://github.parkerisaacson.com/">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:title" content="Parker Isaacson | Software Engineer in NY/NJ">
+    <meta property="og:description" content="Portfolio of Parker Isaacson, Software Engineer based in New York and New Jersey.">
+    <meta property="og:url" content="https://github.parkerisaacson.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/media/favicon.png">
+    <link rel="apple-touch-icon" href="/media/favicon.png">
+    <meta name="theme-color" content="#0ea5e9">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Parker Isaacson | Software Engineer in New York & New Jersey">
+    <meta property="og:description" content="Software engineer and developer based in New York and New Jersey — portfolio, projects, and open source work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.parkerisaacson.com/">
+    <meta property="og:image" content="https://github.parkerisaacson.com/media/preview.jpg">
+    <meta property="og:image:alt" content="Parker Isaacson - Software Engineer Portfolio">
+
+    <!-- Twitter Card (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Parker Isaacson | Software Engineer in NY/NJ">
+    <meta name="twitter:description" content="Explore the projects and work of Parker Isaacson, software engineer based in New York and New Jersey.">
+    <meta name="twitter:image" content="https://github.parkerisaacson.com/media/preview.jpg">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Parker Isaacson",
+      "url": "https://github.parkerisaacson.com/",
+      "jobTitle": "Software Engineer",
+      "sameAs": [
+        "https://github.com/Parker-Isaacson",
+        "https://www.linkedin.com/in/parkerisaacson"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / Open Source"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY/NJ",
+        "addressCountry": "USA"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Parker Isaacson Software Engineering",
+    "url": "https://github.parkerisaacson.com/",
+    "logo": "https://github.parkerisaacson.com/media/favicon.png",
+    "sameAs": [
+        "https://github.com/Parker-Isaacson",
+        "https://www.linkedin.com/in/parkerisaacson"
+    ]
+    }
+    </script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="navbar-brand">Parker Isaacson</a>
             <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="#social" class="navbar-link">Social</a></li>
                 <li><a href="#home" class="navbar-link active">Home</a></li>
                 <li><a href="#about" class="navbar-link">About</a></li>
                 <li><a href="#projects" class="navbar-link">Projects</a></li>
@@ -29,6 +112,14 @@
         <section id="home" class="section text-center space-y-6 anchor-section">
             <h1 class="header header-large">Parker Isaacson</h1>
             <p class="paragraph paragraph-large muted text-center">Clarkson University -- 2027 -- Software Engineering</p>
+        </section>
+
+        <section id="social" class="section text-center space-y-6">
+            <h2 class="subheading subheading-h2 accent">Connect with Me</h2>
+            <div class="space-y-4">
+                <a href="https://www.linkedin.com/in/parker-isaacson-8812a8292/" target="_blank" class="btn btn-primary btn-medium">LinkedIn</a>
+                <a href="https://github.com/Parker-Isaacson" target="_blank" class="btn btn-secondary btn-medium">GitHub</a>
+            </div>
         </section>
 
         <section id="about" class="section space-y-8 anchor-section">
@@ -101,8 +192,8 @@
         <section id="skills" class="section space-y-8 anchor-section">
             <h2 class="subheading subheading-h2 accent">Technical Skills</h2>
             <div class="paragraph-with-image image-right">
-                <img src="/media/flower1.jpg" 
-                     alt="White Flowers" 
+                <img src="/media/flower1-small.jpg" 
+                     alt="Close-up of a white flower with sunlight highlighting its soft petals" 
                      class="image-medium">
                 <div>
                     <p class="paragraph paragraph-medium">
@@ -118,8 +209,8 @@
         <section id="hobbies" class="section space-y-8 anchor-section">
             <h2 class="subheading subheading-h2 accent">Hobbies</h2>
             <div class="paragraph-with-image">
-                <img src="/media/flower2.jpg" 
-                     alt="Red Flower" 
+                <img src="/media/flower2-small.jpg" 
+                     alt="Bright red flower with dark black center petals captured in natural sunlight" 
                      class="image-medium">
                 <div class="space-y-4">
                     <div class="alert alert-warning">
@@ -151,26 +242,45 @@
             </div>
             <div class="space-y-6">
                 <p class="paragraph paragraph-medium">
-                    Below are just a handful of the images I've taken, all of them are unedited.
+                    Below are just a handful of the images I've taken — all of them are unedited.
+                    Click any image to view the full-resolution version in a new tab.
                 </p>
-                <img src="/media/flower3.jpg" 
-                    alt="Flower" 
-                    class="image-medium modal-image">
-                <img src="/media/flower4.jpg" 
-                    alt="Flower" 
-                    class="image-medium modal-image">
-                <img src="/media/flower5.jpg" 
-                    alt="Flower" 
-                    class="image-medium modal-image">
-                <img src="/media/flower6.jpg" 
-                    alt="Flower" 
-                    class="image-medium modal-image">
-                <img src="/media/woods1.jpg" 
-                    alt="Woods" 
-                    class="image-medium modal-image">
-                <img src="/media/woods2.jpg" 
-                    alt="Woods" 
-                    class="image-medium modal-image">
+
+                <a href="/media/flower3.jpg" target="_blank">
+                    <img src="/media/flower3-small.jpg" 
+                        alt="Vibrant yellow peony flower in bloom surrounded by green leaves" 
+                        class="image-medium modal-image" loading="lazy">
+                </a>
+
+                <a href="/media/flower4.jpg" target="_blank">
+                    <img src="/media/flower4-small.jpg" 
+                        alt="Cluster of red and purple garden flowers in bright afternoon light" 
+                        class="image-medium modal-image" loading="lazy">
+                </a>
+
+                <a href="/media/flower5.jpg" target="_blank">
+                    <img src="/media/flower5-small.jpg" 
+                        alt="Patch of light purple and white wildflowers growing in tall grass" 
+                        class="image-medium modal-image" loading="lazy">
+                </a>
+
+                <a href="/media/flower6.jpg" target="_blank">
+                    <img src="/media/flower6-small.jpg" 
+                        alt="Sunlit woodland clearing with soft green undergrowth and tall trees" 
+                        class="image-medium modal-image" loading="lazy">
+                </a>
+
+                <a href="/media/woods1.jpg" target="_blank">
+                    <img src="/media/woods1-small.jpg" 
+                        alt="Dense forest with patches of sunlight filtering through trees onto ferns" 
+                        class="image-medium modal-image" loading="lazy">
+                </a>
+
+                <a href="/media/woods2.jpg" target="_blank">
+                    <img src="/media/woods2-small.jpg" 
+                        alt="Woodland plants and ferns with clusters of small white wildflowers" 
+                        class="image-medium modal-image" loading="lazy">
+                </a>
             </div>
         </div>
     </div>

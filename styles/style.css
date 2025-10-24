@@ -527,7 +527,7 @@ html {
     background: white;
     border-radius: 1rem;
     padding: 2rem;
-    max-width: 32rem;
+    max-width: 64rem;
     width: 90%;
     max-height: 90vh;
     overflow-y: auto;
@@ -825,4 +825,19 @@ html {
 
 .breadcrumb-separator {
     color: var(--neutral-400);
+}
+
+#social .btn {
+    margin: 0.25rem;
+}
+
+#social {
+    padding-top: 2rem;
+    border-bottom: 1px solid var(--neutral-200);
+}
+
+.modal-image:hover {
+  cursor: zoom-in;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
