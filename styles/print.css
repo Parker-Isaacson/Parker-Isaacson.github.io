@@ -1,0 +1,164 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    @page {
+        margin: 0.55in;
+        size: landscape;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    main,
+    .container {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: none !important;
+        width: 100% !important;
+    }
+
+    .print-document {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .print-area {
+        visibility: visible;
+        position: relative;
+        display: block !important;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+        padding: 0;
+        break-before: page;
+        page-break-before: always;
+    }
+
+    .print-area:first-of-type {
+        break-before: auto;
+        page-break-before: auto;
+    }
+
+    .print-area * {
+        visibility: visible;
+    }
+
+    nav,
+    .navbar,
+    button,
+    .no-print {
+        display: none !important;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    .table-wrapper {
+        overflow: visible !important;
+        margin: 0.75rem 0 1.25rem 0 !important;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        background: #ffffff !important;
+        box-shadow: none !important;
+        font-size: 10px;
+    }
+
+    thead {
+        display: table-header-group;
+        background: #0ea5e9 !important;
+        color: white !important;
+    }
+
+    tr {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    tr.row-blue {
+        background: #e0f2fe !important;
+    }
+
+    th,
+    td {
+        padding: 0.35rem 0.4rem;
+        text-align: left;
+        border: 1px solid #93c5fd !important;
+        color: #000;
+        vertical-align: middle;
+        overflow-wrap: anywhere;
+    }
+
+    thead th {
+        color: white !important;
+    }
+
+    .print-blank .blank {
+        color: transparent !important;
+    }
+
+    .peaks-table th:nth-child(1),
+    .peaks-table td:nth-child(1) {
+        width: 18%;
+    }
+
+    .peaks-table th:nth-child(2),
+    .peaks-table td:nth-child(2) {
+        width: 10%;
+    }
+
+    .peaks-table th:nth-child(3),
+    .peaks-table td:nth-child(3) {
+        width: 18%;
+    }
+
+    .peaks-table th:nth-child(4),
+    .peaks-table td:nth-child(4) {
+        width: 10%;
+    }
+
+    .peaks-table th:nth-child(5),
+    .peaks-table td:nth-child(5),
+    .peaks-table th:nth-child(6),
+    .peaks-table td:nth-child(6),
+    .peaks-table th:nth-child(7),
+    .peaks-table td:nth-child(7) {
+        width: 14%;
+    }
+
+    .starts-table th:nth-child(1),
+    .starts-table td:nth-child(1) {
+        width: 34%;
+    }
+
+    .starts-table th:nth-child(2),
+    .starts-table td:nth-child(2) {
+        width: 33%;
+    }
+
+    .starts-table th:nth-child(3),
+    .starts-table td:nth-child(3) {
+        width: 33%;
+    }
+}
